@@ -39,7 +39,7 @@ public class ClassAMain {
 
         System.out.println(classA2.num + "번 학생의 이름은" + classA2.name + "이고, 점수는" + classA2.score + "입니다.");
 
-        classA2.name = "김삼"
+        classA2.name = "김삼";
         classA1.callName();
 
         //car/ carmain
