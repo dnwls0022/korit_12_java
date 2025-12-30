@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Operator01.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #2aacb8;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Operator01.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">ch02_operator</span><span class="s2">;</span>
+<span class="s3">/* 
+Camel case -&gt; Java 상에서의 변수 표기법(JavaScript에서도 사용) 
+    Snake case -&gt; Java 에서 쓸 일이 없습니다. 근데 상수 표기에서 비슷하게 사용됨 
+    Pascal case -&gt; 첫 번째 문자가 대문자고 나머지는 소문자로 가다가 두 번째 단어의 
+        첫 번째 문자는 대문자 
+        ex) 한 단어 짜리 : Operator01 
+        ex) 복수 단어 : OperatorTestResult  -&gt; Pascal case는 클래스 명명 규칙에 해당 
+ */</span>
+<span class="s0">public class </span><span class="s1">Operator01 </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s3">// 변수 선언 및 초기화</span>
+        <span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s4">10</span><span class="s2">;</span>
+
+        <span class="s3">// 이전 패키지까지 해서 자료형, 변수명, 데이터에 대해서 학습했습니다.</span>
+        <span class="s3">// 이번에는 '='를 학습할겁니다.</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i</span><span class="s2">);</span>
+        <span class="s1">i </span><span class="s2">= </span><span class="s1">i </span><span class="s2">+ </span><span class="s4">1</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i</span><span class="s2">);</span>
+        <span class="s3">/* 
+            대입 연산자 = : 왼쪽과 오른쪽이 같다는 의미가 아니라 
+                = 오른쪽에 있는 '데이터'를 = 왼쪽에 있는 '변수'에 &quot;대입&quot;한다는 의미. 
+ 
+            그렇다면 왼쪽과 오른쪽이 같다는 의미로는 어떻게 표시할까요? == 
+         */</span>
+        <span class="s3">// 일반 연산자</span>
+        <span class="s3">/* 
+            + : 더하기 
+            - : 빼기 
+            * : 곱하기 
+            / : 나누기 
+            % : 나머지 연산자 
+         */</span>
+        <span class="s0">int </span><span class="s1">a </span><span class="s2">= </span><span class="s4">5</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">b </span><span class="s2">= </span><span class="s4">2</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">a</span><span class="s2">/</span><span class="s1">b</span><span class="s2">);        </span><span class="s3">// 결과값 : 2</span>
+        <span class="s0">double </span><span class="s1">result </span><span class="s2">= (</span><span class="s0">double</span><span class="s2">) </span><span class="s1">a</span><span class="s2">/</span><span class="s1">b</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">result</span><span class="s2">);     </span><span class="s3">// 결과값 : 2.5</span>
+
+        <span class="s3">// 알아서 2.5 나오면 좋겠지만 아까 말씀드렸던 것처럼 얘네가 생각보다 더 멍청해서</span>
+        <span class="s3">// 하나 하나 잘 지정해줘야 합니다.</span>
+        <span class="s3">/* 
+            즉 개발자는 어떤 사람이다? 
+            컴퓨터가 잘 작동할 수 있도록 명령을 잘 내리는 사람이다. 라고 생각해주시고 
+            혹시 컴퓨터가 기분 나쁘지 않는지 체크도 좀 해줘야 합니다. 
+         */</span>
+        <span class="s3">/* 
+            복합 대입 연산자 
+            1) += 
+            2) -= 
+            3) *= 
+            4) /= 
+         */</span>
+        <span class="s0">int </span><span class="s1">num1 </span><span class="s2">= </span><span class="s4">1</span><span class="s2">;       </span><span class="s3">// 변수 선언 및 초기화</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">num1</span><span class="s2">);</span>
+        <span class="s1">num1 </span><span class="s2">+= </span><span class="s4">2</span><span class="s2">;          </span><span class="s3">// num1 = num1 + 2; 라는 의미</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">num1</span><span class="s2">);</span>
+        <span class="s1">num1 </span><span class="s2">-= </span><span class="s4">1</span><span class="s2">;          </span><span class="s3">// num1 = num1 -1;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">num1</span><span class="s2">);</span>
+        <span class="s1">num1 </span><span class="s2">*= </span><span class="s4">10</span><span class="s2">;         </span><span class="s3">// num1 = num1 * 10;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">num1</span><span class="s2">);</span>
+        <span class="s1">num1 </span><span class="s2">/= </span><span class="s4">5</span><span class="s2">;          </span><span class="s3">// num1 = num1 / 5;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">num1</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;------------------------------------&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s4">10</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">j</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">j</span><span class="s2">++);    </span><span class="s3">// 변수명++ : 코드를 실행시킨 후에 j에 1을 더함 / 그래서 10</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">j</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(++</span><span class="s1">j</span><span class="s2">);    </span><span class="s3">// ++변수명 : 코드를 실행시키기 전에 j에 1을 더함 / 그래서 12</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">j</span><span class="s2">);      </span><span class="s3">// 그럼 얘는 바뀔 일이 없으니까 12</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">j</span><span class="s2">--);    </span><span class="s3">// 변수명-- : 코드를 실행시킨 후에 j에 1을 감함 / 그래서 12</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">j</span><span class="s2">);      </span><span class="s3">// 그러면 얘는 11이겠네요.</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(--</span><span class="s1">j</span><span class="s2">);    </span><span class="s3">// --변수명 : 코드를 실행시키기 전에 j에서 1을 감함 / 10이겠네</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">j</span><span class="s2">);      </span><span class="s3">// 10이네요.</span>
+
+        <span class="s0">int </span><span class="s1">age </span><span class="s2">= </span><span class="s4">20</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;제 나이는 &quot; </span><span class="s2">+ </span><span class="s1">age </span><span class="s2">+ </span><span class="s5">&quot;살입니다.&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;내년에는 &quot; </span><span class="s2">+ </span><span class="s1">age </span><span class="s2">+ </span><span class="s4">1 </span><span class="s2">+ </span><span class="s5">&quot;살이 됩니다.&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;내년에는 &quot; </span><span class="s2">+ (</span><span class="s1">age </span><span class="s2">+ </span><span class="s4">1</span><span class="s2">) + </span><span class="s5">&quot;살이 됩니다.&quot;</span><span class="s2">);</span>
+        <span class="s3">// 이상의 경우에서 79 번 라인은 왜 원하는 결과값이 나오지 않는지 설명하시오. 라고 했을 때 가능한가</span>
+        <span class="s3">// Operator02 클래스를 생성하시오.</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

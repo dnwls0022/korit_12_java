@@ -1,6 +1,5 @@
 package ch07_methods;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Method08StarWriting3 {
@@ -80,6 +79,7 @@ public class Method08StarWriting3 {
 
     boolean continued = true;
     while(continued){
+
         System.out.println(getStar());
         System.out.println("계속하시겠습니까? Yes? 1, 아니면 0을 선택하세요. >>> ");
         Scanner scanner = new Scanner(System.in);
