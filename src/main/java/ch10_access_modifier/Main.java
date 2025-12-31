@@ -1,7 +1,7 @@
 package ch10_access_modifier;
 
 class AccessModifierExample { // 간판 클래스는 public이 명시되어야한다.
-
+//접근제어자 public, private,protected, default
     //field
     public int publicVar = 10;
     protected int protectedVar = 20;
