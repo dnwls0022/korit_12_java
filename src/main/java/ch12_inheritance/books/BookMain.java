@@ -4,6 +4,8 @@ public class BookMain {
     public static void main(String[] args) {
         //인스턴스만들기
         //하드코딩?????
+        //call1 call2????
+
         EBook book2 = new EBook("어린왕자","우진",54, "PDF");
         System.out.println("제목 :" +book2.getTitle() + "\n"+ "저자 :"+book2.getAuthor() + "\n"
                 + "파일 크기 :" +book2.getFileSize() + "\n" + "파일 형식 :" + book2.getFormat());

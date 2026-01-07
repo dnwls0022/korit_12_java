@@ -1,4 +1,5 @@
 package ch02_operator;
+//연산자
 /*
 Camel case -> Java 상에서의 변수 표기법(JavaScript에서도 사용)
     Snake case -> Java 에서 쓸 일이 없습니다. 근데 상수 표기에서 비슷하게 사용됨

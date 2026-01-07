@@ -16,6 +16,7 @@ public abstract class Factory {
     public void setName(String name) {
         this.name = name;
     }
+
     //고유메서드
     public  void showInfo(){
         System.out.println("공장의 정보를 출력합니다. \n 공장이름 :"+name);

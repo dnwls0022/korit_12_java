@@ -24,7 +24,7 @@ package ch12_inheritance;
     안녕하세요, 제 이름은 여러분이름이고 나이는 몇살입니다.
     내년에는 몇+1살이됩니다.
     여러분이름이 자바의 기초를 읽는 중입니다.
-
+//extends 자식클래스
  */
 public class Human extends Animal {
     public Human() {

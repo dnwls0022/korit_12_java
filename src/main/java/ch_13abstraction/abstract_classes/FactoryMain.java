@@ -49,6 +49,45 @@ public class FactoryMain {
 
         만약 부모 클래스에 쇼 인포 메서드가 있는걸..모른다면 폰팩토리클래스에 별개의 쇼 인포메서드를 따로 정의했다.
          */
+        System.out.println("---------");
+        // 객체생성
+        TabletFactory tabletFactory1 = new TabletFactory();
+        tabletFactory1.setName("애플태블릿공장");
+        tabletFactory1.setName("구글태블릿공장");
+
+        String factoryName = tabletFactory1.getName();
+        System.out.println("현재 공장은 "+ factoryName + "으로변경됨");
+        tabletFactory1.produce("구글팩토리");
+        tabletFactory1.manage();
+        tabletFactory1.upgrade("구글팩토리 10인치 2세대");
+
+        System.out.println("___");
+        Factory factory2= new Factory() {
+            @Override
+            public void produce(String model) {
+                System.out.println(" [ " + model + " ] 컴퓨터를 생산합니다.");
+            }
+
+            @Override
+            public void manage() {
+                System.out.println("컴퓨터 공장을 관리합니다.");
+
+            }
+        };
+        factory2.setName("삼컴공");
+        factory2.showInfo();
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }

@@ -1,7 +1,7 @@
 package ch03_scanner;
 
 import java.util.Scanner;
-
+//입력
 public class Scanner01 {
     public static void main(String[] args) {
 //        // 변수 선언
