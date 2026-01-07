@@ -69,9 +69,9 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
-
+    // book클래스의 고유메서드
     public void showInfo(){
-        System.out.println("제목"+ getTitle() +"MB");
-        System.out.println("저자"+ getAuthor() +"PDF");
+        System.out.println("제목"+ getTitle() +"title");
+        System.out.println("저자"+ getAuthor() +"author");
     }
 }
