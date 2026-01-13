@@ -1,4 +1,4 @@
-package game.items;
+package ch14_casting.items;
 
 public class Staff implements Weapon {
     @Override

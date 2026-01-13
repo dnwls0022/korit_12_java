@@ -12,6 +12,7 @@ public class Inventory {
     }
 
     //메서드 명 addWeapon(Weapon weapon)
+
     public void addWeapon(Weapon weapon) {
         //for문
         for (int i = 0; i < weaponSlots.length; i++) {
@@ -28,6 +29,8 @@ public class Inventory {
 
     //메서드생성 attackAll()
     public void attackAll() {
+       //향상된 for문 형식
+        //for( 객체명 변수명  :배열명)
         for (Weapon weapon : weaponSlots) {
             if (weapon != null) {
                 weapon.attack();

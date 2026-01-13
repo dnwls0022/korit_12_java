@@ -1,9 +1,9 @@
-package game.items;
+package ch14_casting.items;
 
 public class Bow implements Weapon {
     @Override
     public void attack() {
-        System.out.println("검을 크게 휘두릅니다!");
+        System.out.println("화살을 날립니다!");
     }
 
     public void snipe() {
