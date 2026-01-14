@@ -9,7 +9,8 @@ Map 은 KEY- value pair / 쌍/entry ...
 public class StrMap {
     public static void main(String[] args) {
         //Map초기화
-        // 키의자료형과 vlaue의 자료형을고정시키기위해 T,V가노옴
+
+        // 키의자료형과 vlaue의 자료형을고정시키기위해 k,V가노옴
         Map<String, String> strMap1 = new HashMap<>();
         // KEY- value 삽입 메서드
 
