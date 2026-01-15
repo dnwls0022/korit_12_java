@@ -23,7 +23,7 @@ public class Exception2 {
         String connectPassword = "1a2b3c4d!!";
         //특정 메서드에서 발생하는 것을 지정하고 싶다면 THOROW 명령어를 입력하여야한다.
         if(id.equals(connectid)|| !password.equals(connectPassword)){
-            throw new LoginFailedException("로그인실패 : id또는pw객체가틀림");
+            throw new LoginFailedException("로그인실패 : id또는pw가틀림");
             //Throw s없음 :동사원형으로 시작했으니 명령문
             //LoginFailedException 생성자에 string argument 를 집어넣어서 객체생성
             // 그객체를 던지라는의미로해석
@@ -40,7 +40,7 @@ public class Exception2 {
 
             login(inputid, inputpassword);
         }   catch (LoginFailedException e){
-            System.out.println("로그인실패:" + e.getMessage());
+            System.out.println("" + e.getMessage());
 
         }finally {
             System.out.println("프로그램 종료");
